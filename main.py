@@ -1,5 +1,8 @@
-import Sudoku
+from Sudoku import Sudoku
 import constants as const
 
-with Sudoku(const.BOARD_1) as game:
+with Sudoku() as game:
+	game.print_board()
+	game.solve_board()
+	print('- - - - - - - - - - - - - -')
 	game.print_board()
