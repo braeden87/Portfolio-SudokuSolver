@@ -1,8 +1,10 @@
 from Sudoku import Sudoku
-import constants as const
+from GUIMain import main_GUI
 
-with Sudoku() as game:
-	game.print_board()
-	game.solve_board()
-	print('- - - - - - - - - - - - - -')
-	game.print_board()
+#with Sudoku() as game:
+	#game.print_board()
+	#game.solve_board()
+	#print('- - - - - - - - - - - - - -')
+	#game.print_board()
+if __name__ == '__main__':
+	main_GUI()
