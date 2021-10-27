@@ -1,4 +1,4 @@
-# Portfolio-SudokuSolver
+# Sudoku Solver
 ## Skills Utilized
 - Python
 - Pygame
@@ -10,5 +10,5 @@ The program allows the user to click on any empty square in the puzzle and enter
 
 If you watch the program run you can see the Backtracking Algorithm in action as the program will at times get to a certain point, realize that the answer is not possible, and will set the current value back to blank / 0 and will attempt to find a new value for the previos blank space.
 
-##Inspiration For Project
+## Inspiration For Project
 I was initially motivated to create this project after hearing about it from Tim Ruscica (can be found on GitHub at techwithtim) on his youtube channel. He created it himself years ago, and recommended it as a great way to showcase your proficciency with python. After seeing and hearing about the project I was intrigued by how it all actually worked and decided to create my own version. 
