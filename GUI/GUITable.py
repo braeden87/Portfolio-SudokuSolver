@@ -1,5 +1,5 @@
 import pygame
-from GUICell import Cell
+from GUI.GUICell import Cell
 import constants as const
 pygame.font.init()
 
@@ -8,10 +8,10 @@ class Table:
     ###############################################################################
     #Creates a Table Object
     ###############################################################################
-    def __init__(self, rows, columns, width, height, screen):
+    def __init__(self, rows, columns, width, height, board, screen):
         self.rows = rows
         self.columns = columns
-        self.cells = [[Cell(const.BOARD_INTERMEDIATE[i][j], i, j, width, height) for j in range(columns)] for i in range(rows)]
+        self.cells = [[Cell(board[i][j], i, j, width, height) for j in range(columns)] for i in range(rows)]
         self.width = width
         self.height = height
         self.focused = None

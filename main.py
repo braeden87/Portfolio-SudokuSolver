@@ -1,5 +1,5 @@
 from Sudoku import Sudoku
-from GUIMain import main_GUI
+from GUI.GUIMain import main_GUI
 
 #with Sudoku() as game:
 	#game.print_board()
