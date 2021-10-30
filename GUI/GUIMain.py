@@ -11,6 +11,7 @@ class main_GUI:
 #this class in the main.py file to run the GUI
 ###############################################################################
     screen = pygame.display.set_mode((const.SCREEN_WIDTH, const.SCREEN_HEIGHT))
+    screen.fill(const.TEXT_COLOR)
     pygame.display.set_caption('Sudoku Solver')
     level_header = header_box(0, 0, const.SCREEN_WIDTH, const.SCREEN_HEIGHT * (1/7), 'Choose Your Difficulty')
     level1 = submit_button(0, const.SCREEN_HEIGHT * (1/7), const.SCREEN_WIDTH, const.SCREEN_HEIGHT * (2/7), 'Easy Puzzle')
@@ -23,7 +24,6 @@ class main_GUI:
     strikes = 0
     level_selected = False
     while running:
-        screen.fill(const.TEXT_COLOR)
         if not level_selected:
             level_header.draw(screen)
             for level in levels:
