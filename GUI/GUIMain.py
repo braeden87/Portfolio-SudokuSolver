@@ -6,10 +6,10 @@ from GUI.GUI_Submit_Button import submit_button
 from GUI.GUI_Header import header_box
 
 class main_GUI:
-    ###############################################################################
-    #This is where all of the Gui classes will be utilized. I will then call this 
-    #this class in the main.py file to run the GUI
-    ###############################################################################
+###############################################################################
+#This is where all of the Gui classes will be utilized. I will then call this 
+#this class in the main.py file to run the GUI
+###############################################################################
     screen = pygame.display.set_mode((const.SCREEN_WIDTH, const.SCREEN_HEIGHT))
     pygame.display.set_caption('Sudoku Solver')
     level_header = header_box(0, 0, const.SCREEN_WIDTH, const.SCREEN_HEIGHT * (1/7), 'Choose Your Difficulty')
@@ -50,42 +50,24 @@ class main_GUI:
                 if event.type == pygame.QUIT:
                         running = False
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_1:
-                        key = 1
-                    if event.key == pygame.K_2:
-                        key = 2
-                    if event.key == pygame.K_3:
-                        key = 3
-                    if event.key == pygame.K_4:
-                        key = 4
-                    if event.key == pygame.K_5:
-                        key = 5
-                    if event.key == pygame.K_6:
-                        key = 6
-                    if event.key == pygame.K_7:
-                        key = 7
-                    if event.key == pygame.K_8:
-                        key = 8
-                    if event.key == pygame.K_9:
-                        key = 9
-                    if event.key == pygame.K_KP1:
-                        key = 1
-                    if event.key == pygame.K_KP2:
-                        key = 2
-                    if event.key == pygame.K_KP3:
-                        key = 3
-                    if event.key == pygame.K_KP4:
-                        key = 4
-                    if event.key == pygame.K_KP5:
-                        key = 5
-                    if event.key == pygame.K_KP6:
-                        key = 6
-                    if event.key == pygame.K_KP7:
-                        key = 7
-                    if event.key == pygame.K_KP8:
-                        key = 8
-                    if event.key == pygame.K_KP9:
-                        key = 9
+                    if event.key == pygame.K_1: key = 1
+                    if event.key == pygame.K_2: key = 2
+                    if event.key == pygame.K_3: key = 3
+                    if event.key == pygame.K_4: key = 4
+                    if event.key == pygame.K_5: key = 5
+                    if event.key == pygame.K_6: key = 6
+                    if event.key == pygame.K_7: key = 7
+                    if event.key == pygame.K_8: key = 8
+                    if event.key == pygame.K_9: key = 9
+                    if event.key == pygame.K_KP1: key = 1
+                    if event.key == pygame.K_KP2: key = 2
+                    if event.key == pygame.K_KP3: key = 3
+                    if event.key == pygame.K_KP4: key = 4
+                    if event.key == pygame.K_KP5: key = 5
+                    if event.key == pygame.K_KP6: key = 6
+                    if event.key == pygame.K_KP7: key = 7
+                    if event.key == pygame.K_KP8: key = 8
+                    if event.key == pygame.K_KP9: key = 9
                     if event.key == pygame.K_DELETE:
                         table.clear_temp_val()
                         key = None

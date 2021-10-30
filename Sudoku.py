@@ -18,6 +18,12 @@ class Sudoku:
 		return self
 	def __exit__(self, exc_type, exc_value, exc_traceback):
 		print('Exit:')
+######################################################################
+# Solve Board Method
+#
+# This method will solve for all of the empty spaces in the puzzle.
+# it does this using the backtracking algorithm
+######################################################################  
 	def solve_board(self):
 		empty = self.empty_cell()
 		if not empty: return True
@@ -30,7 +36,13 @@ class Sudoku:
 
 					self.board[row][column] = 0
 
-
+######################################################################
+# Valid Number Method
+#
+# This method  checks to see whether a number entered into a certain 
+# cell of the puzzle would work with the rules of sudoku. It checks 
+# the row, column, and square to see if that number is already there
+######################################################################  
 	def valid_number(self, number, position):
 		square_x = position[0] // 3
 		square_y = position[1] // 3
@@ -49,7 +61,12 @@ class Sudoku:
 					return False
 		return True
 
-
+######################################################################
+# Print Board Method
+#
+# This method prints whatever valuse are currently inside of the board
+# it can be used to print the original or completed board
+######################################################################  
 	def print_board(self):
 		for i in range(len(self.board)):
 			if i % 3 == 0 and i != 0:

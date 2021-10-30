@@ -16,7 +16,7 @@ class submit_button:
 # Handle Event Method
 #
 # This method is accepts an event as an argument and decides what to  
-#do inside of the text box based on what event was passed in
+#do when the button is clicked
 ######################################################################  
     def handle_event(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:
