@@ -13,5 +13,6 @@ If you watch the program run you can see the Backtracking Algorithm in action as
 ## Inspiration For Project Creation
 I was initially motivated to create this project after hearing about it from Tim Ruscica (can be found on GitHub at techwithtim) on his youtube channel. He created it himself years ago, and recommended it as a great way to showcase your proficciency with python. After seeing and hearing about the project, I was intrigued by how it all actually worked and decided to create my own version. 
 ## Project In Action
-https://user-images.githubusercontent.com/59823288/139083531-559a715b-26ee-449f-a16a-95a0c812314f.mp4
+
+https://user-images.githubusercontent.com/59823288/139534670-870a9231-c104-49d2-aaf0-cebb9e2de03a.mp4
 
